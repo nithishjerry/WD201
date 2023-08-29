@@ -11,25 +11,25 @@ const todoList = () => {
         
       // Write the date check condition here and return the array
       // of overdue items accordingly.
-      let Overdueprov = [];
-      Overdueprov = all.filter((TodoList) => TodoList.dueDate < new Date().toLocaleDateString("en-CA"));
-      return Overdueprov;
+      let Overduejery = [];
+      Overduejery = all.filter((TodoList) => TodoList.dueDate < new Date().toLocaleDateString("en-CA"));
+      return Overduejery;
     }
   
     const dueToday = () => {
       // Write the date check condition here and return the array
       // of todo items that are due today accordingly.
-      let DueTodayprov = [];
-      DueTodayprov=all.filter((TodoList) => TodoList.dueDate === new Date().toLocaleDateString("en-CA"));
-      return DueTodayprov;
+      let DueTodayjery = [];
+      DueTodayjery=all.filter((TodoList) => TodoList.dueDate === new Date().toLocaleDateString("en-CA"));
+      return DueTodayjery;
     }
   
     const dueLater = () => {
       // Write the date check condition here and return the array
       // of todo items that are due later accordingly.
-      let DueLaterprov = [];
-      DueLaterprov = all.filter((TodoList) => TodoList.dueDate > new Date().toLocaleDateString("en-CA"));
-      return DueLaterprov;
+      let DueLaterjery = [];
+      DueLaterjery = all.filter((TodoList) => TodoList.dueDate > new Date().toLocaleDateString("en-CA"));
+      return DueLaterjery;
     }
   
     const toDisplayableList = (list) => {

@@ -75,19 +75,19 @@ todos.add({ title: 'Pay electric bill', dueDate: tomorrow, completed: false })
 
 console.log("My Todo-list\n")
 
-console.log("Overduejery")
+console.log("Overdue")
 var overdues = todos.overduejery()
 var formattedOverdues = todos.toDisplayableList(overdues)
 console.log(formattedOverdues)
 console.log("\n")
 
-console.log("Due Todayjery")
+console.log("Due Today")
 let itemsDueToday = todos.dueTodayjery()
 let formattedItemsDueToday = todos.toDisplayableList(itemsDueToday)
 console.log(formattedItemsDueToday)
 console.log("\n")
 
-console.log("Due Laterjery")
+console.log("Due Later")
 let itemsDueLater = todos.dueLaterjery()
 let formattedItemsDueLater = todos.toDisplayableList(itemsDueLater)
 console.log(formattedItemsDueLater)

@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-manager</title> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div>
+        <div>
+            <%- include("header.ejs") %>
+            <form>
+                <div>
+                    <div>
+                        <input type="text" placeholder="What's next?" required>
+                    </div>
+                    <div>
+                        <input type="date" required >
+                    </div>
+                    <div>
+                        <button type="submit">Add</button>
+                    </div>
+                </div>
+            </form>
+            <%- include("todos.ejs") %> 
+        </div>
+    </div>
+    
+</body>
+</html>
